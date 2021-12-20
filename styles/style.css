@@ -23,7 +23,7 @@ h3 {
     background-image: url(../vendors/images/background1.png);
     background-color: #ddd;
     background-repeat: no-repeat;
-    background-size: initial;
+    background-size: cover;
     background-position: initial;
     height: auto;
     position: relative;
@@ -60,7 +60,7 @@ div#global-bot {
     flex-direction: column;
     align-items: center;
     width: 100%;
-    margin-bottom: 100px;
+    margin-bottom: 140px;
 }
 
 #banner {
@@ -75,12 +75,12 @@ div#global-bot {
 
 #light2 {
     position: absolute;
-    top: -30%;
+    top: -15%;
 }
 
 #light3 {
     position: absolute;
-    top: -50%;
+    top: -15%;
 }
 
 img#image-banner {
@@ -241,6 +241,10 @@ div#banner:before {
     width: 85%;
 }
 
+div#Features .header-section {
+    margin-bottom: 80px;
+}
+
 #Features .detail p {
     font-size: 20px;
     font-weight: 500;
@@ -279,14 +283,20 @@ div#banner:before {
     justify-content: center;
 }
 
+#Ecosystem .header-section {
+    margin-bottom: 80px;
+}
+
 #Ecosystem .content-text {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
+    margin-top: 25px;
 }
 
 #Ecosystem .content .detail-item {
     width: 275px;
+    height: 300px;
     display: flex;
     justify-content: center;
 }
@@ -309,8 +319,9 @@ div#banner:before {
     width: 335px;
     height: 378px;
     background-image: url("../vendors/images/image321.png");
-    top: -160px;
-    right: 129px;
+    top: -130px;
+    right: 110px;
+    background-size: contain;
 }
 
 div#Community {
@@ -320,6 +331,7 @@ div#Community {
     align-items: center;
     color: white;
     margin-bottom: 100px;
+    padding-top: 60px;
 }
 
 #section1 div#section1-content {
@@ -337,6 +349,7 @@ div#Ecosystem {
     color: white;
     margin-bottom: 100px;
     position: relative;
+    padding-top: 160px;
 }
 
 div#Features {
@@ -345,6 +358,7 @@ div#Features {
     align-items: center;
     color: white;
     margin-bottom: 120px;
+    padding-top: 120px;
 }
 
 div#CyBloc {
@@ -353,14 +367,16 @@ div#CyBloc {
     align-items: center;
     color: white;
     position: relative;
+    padding-top: 20px;
 }
 
-div#section6 {
+div#Social {
     display: flex;
     flex-direction: column;
     align-items: center;
     color: white;
     margin-bottom: 100px;
+    padding-top: 100px;
 }
 
 div#form-image img {
@@ -369,12 +385,13 @@ div#form-image img {
 
 div#form-image {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
 }
 
 div#form-image-mobile img {
     width: auto;
+    margin: 0 20px;
 }
 
 div#form-image-mobile {
@@ -458,13 +475,12 @@ div#form-email-wrapper {
 }
 
 div.input-form #email {
-    height: 40px;
     width: calc(100% - 140px - 185px);
-    padding: 20px 40px;
     background: linear-gradient(98.8deg, rgba(4, 1, 18, 0.8) 7.77%, rgba(21, 14, 52, 0) 88.45%);
     opacity: 0.95;
     box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.25);
     backdrop-filter: blur(40px);
+    height: 80px;
 }
 
 div.input-form #email input {
@@ -479,7 +495,8 @@ div.input-form #email input {
     box-shadow: 0px 4px 24px rgb(0 0 0 / 25%);
     backdrop-filter: blur(40px);
     height: 40px;
-    margin-left: 30px;
+    width: 100%;
+    padding: 20px 40px;
 }
 
 div.input-form #email input::placeholder {
@@ -655,8 +672,7 @@ div#form-image img {
     div.input-form #email {
         width: 80%;
         margin-bottom: 25px;
-        height: 40px;
-        padding: 10px 0;
+        height: 60px;
     }
     
     div.input-form #sg-submit-btn {
@@ -684,7 +700,7 @@ div#form-image img {
     div#form-image-mobile {
         margin-top: 15px;
         display: flex;
-        align-items: center;
+        align-items: flex-start;
         justify-content: center;
         position: relative;
     }
@@ -701,6 +717,11 @@ div#form-image img {
         display: block;
         right: 50px;
         bottom: -50px;
+    }
+
+    div.input-form #email input {
+        padding-top: 10px;
+        padding-bottom: 10px;
     }
 }
 
@@ -794,6 +815,7 @@ div#form-image img {
 
     #Ecosystem .content .detail-item {
         width: 200px;
+        height: auto;
         display: flex;
         justify-content: flex-end;
     }
@@ -847,6 +869,7 @@ div#form-image img {
     div.input-form #email {
         padding: 5px 0;
         margin-bottom: 15px;
+        height: 50px;
     }
 
     div#form-image-mobile img {
@@ -869,8 +892,30 @@ div#form-image img {
         height: 300px;
     }
 
-    #section6 .header-section {
+    #Social .header-section {
         margin-bottom: 0;
+    }
+
+    div.input-form #email input {
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-right: 0;
+        padding-left: 20px;
+    }
+    
+    #CyBloc .content .cybloc-image {
+        width: 90%;
+    }
+    
+    #CyBloc .content .cybloc-image img {
+        width: 100%;
+    }
+    
+    #CyBloc .content .cybloc-image:before {
+        width: 80%;
+        left: 10%;
+        top: 0;
+        background-size: contain;
     }
 }
 

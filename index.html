@@ -57,7 +57,7 @@
                 <a href="#CyBloc" class="menu-item">CyBlocs</a>
                 <a href="#Features" class="menu-item">Features</a>
                 <a href="#Ecosystem" class="menu-item">Ecosystem</a>
-                <a href="#Community" class="menu-item">Social</a>
+                <a href="#Social" class="menu-item">Social</a>
                 <a href="https://docs.cyball.com/" target="_blank" class="menu-item">Docs</a>
                 <a href="https://genesis.cyball.com/" target="_blank" class="menu-item" id="genesis">Genesis</a>
             </div>
@@ -76,7 +76,7 @@
                         <li><a href="#CyBloc" class="menu-item">CyBlocs</a></li>
                         <li><a href="#Features" class="menu-item">Features</a></li>
                         <li><a href="#Ecosystem" class="menu-item">Ecosystem</a></li>
-                        <li><a href="#Community" class="menu-item">Social</a></li>
+                        <li><a href="#Social" class="menu-item">Social</a></li>
                         <li><a href="https://docs.cyball.com/" target="_blank" class="menu-item">Docs</a></li>
                         <li><a href="https://genesis.cyball.com/" target="_blank" class="menu-item">Genesis</a></li>
                     </ul>
@@ -85,14 +85,21 @@
         </div>
         <div id="main-content">
             <div id="section1">
-                <video autoplay muted loop id="light1">
+                <video muted loop id="light1">
                     <source src="./vendors/videos/light_1_VP9.webm" type="video/webm">
                 </video>
                 <div id="banner">
-                    <!-- <img src="./vendors/images/banner2.png" alt="" id="image-banner"> -->
-                    <div class="CSSgal">
-
-                        <!-- Don't wrap targets in parent -->
+                    <div id="slider">
+                        <a href="#" class="control_next">></a>
+                        <a href="#" class="control_prev"><</a>
+                        <ul>
+                          <li>SLIDE 1</li>
+                          <li style="background: #aaa;">SLIDE 2</li>
+                          <li>SLIDE 3</li>
+                          <li style="background: #aaa;">SLIDE 4</li>
+                        </ul>  
+                      </div>
+                    <!-- <div class="CSSgal">
                         <s id="s1"></s>
                         <s id="s2"></s>
 
@@ -110,7 +117,7 @@
                             <div><a class="prev" href="#s2"></a><a class="next" href="#s2"></a></div>
                             <div><a class="prev" href="#s1"></a><a class="next" href="#s1"></a></div>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
                 <div id="hero-image-block">
                     <img src="./vendors/images/image1.png" alt="" id="hero-image">
@@ -123,7 +130,7 @@
                 </div>
             </div>
             <div id="CyBloc" class="section">
-                <video autoplay muted loop id="light2">
+                <video muted loop id="light2">
                     <source src="./vendors/videos/light_2_VP9.webm" type="video/webm">
                 </video>
                 <h3 class="header-section">What builds a CyBloc?</h3>
@@ -157,7 +164,7 @@
                 </div>
             </div>
             <div id="Ecosystem" class="section">
-                <video autoplay muted loop id="light3">
+                <video muted loop id="light3">
                     <source src="./vendors/videos/light_3_VP9.webm" type="video/webm">
                 </video>
                 <h3 class="header-section">Ecosystem</h3>
@@ -193,7 +200,7 @@
                 <h3 class="header-section">Backers</h3>
                 <img src="./vendors/images/backer1.png" alt="">
             </div>
-            <div id="section6" class="section">
+            <div id="Social" class="section">
                 <h3 class="header-section">Join our newsletter and socials!</h3>
                 <div id="form-email">
                     <div id="form-email-wrapper">
@@ -259,5 +266,6 @@
 <script src="./js/scroll.js"></script>
 <script src="./js/animation.js"></script>
 <script src="./js/click-trailer.js"></script>
+<script src="./js/slider.js"></script>
 
 </html>
