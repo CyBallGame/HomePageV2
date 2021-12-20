@@ -237,12 +237,19 @@ div#banner:before {
 
 #Features .content {
     display: flex;
-    justify-content: space-between;
-    width: 85%;
+    justify-content: space-around;
+    /* width: 85%; */
 }
 
 div#Features .header-section {
     margin-bottom: 80px;
+}
+
+p.card-name {
+    position: absolute;
+    top: 45%;
+    font-size: 32px;
+    font-weight: bold;
 }
 
 #Features .detail p {
@@ -267,14 +274,43 @@ div#Features .header-section {
 
 #Features .content .cybloc-image {
     position: relative;
+    display: flex;
+    justify-content: center;
 }
 
 #Features .content .cybloc-image #card-desktop{
     display: block;
+    max-width: 400px;
+    width: 90%;
 }
 
 #Features .content .cybloc-image #card-mobile{
     display: none;
+}
+
+div#slider-feature {
+    width: 85%;
+    justify-content: center;
+}
+
+.dot-item {
+    width: 20px;
+    height: 20px;
+    background-color: #000;
+    border-radius: 50%;
+    cursor: pointer;
+    opacity: 0.5;
+    margin: 0 8px;
+}
+
+div#group-dot-slide-feature {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.dot-item:hover {
+    opacity: 0.8;
 }
 
 #Ecosystem .content {
@@ -765,6 +801,8 @@ div#form-image img {
     
     #Features .content .cybloc-image #card-mobile{
         display: block;
+        max-width: 350px;
+        width: 90%;
     }
 
     #CyBloc .detail {
@@ -916,6 +954,13 @@ div#form-image img {
         left: 10%;
         top: 0;
         background-size: contain;
+    }
+
+    p.card-name {
+        position: absolute;
+        top: 45%;
+        font-size: 22px;
+        font-weight: bold;
     }
 }
 
