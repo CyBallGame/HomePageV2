@@ -1,0 +1,88 @@
+
+  @keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  @-moz-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  @-webkit-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  @-o-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  @-ms-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+
+
+  @keyframes fadeInLeft {
+    0% {
+       opacity: 0;
+       transform: translateX(-200px);
+    }
+    100% {
+       opacity: 1;
+       transform: translateX(0);
+    }
+ }   
+
+ @keyframes fadeInRight {
+    0% {
+       opacity: 0;
+       transform: translateX(200px);
+    }
+    100% {
+       opacity: 1;
+       transform: translateX(0);
+    }
+ } 
+
+ .is-inview #hero-image-block {
+    animation: fadeIn 3s;
+    -webkit-animation: fadeIn 3s;
+    -moz-animation: fadeIn 3s;
+    -o-animation: fadeIn 3s;
+    -ms-animation: fadeIn 3s;
+  }
+
+  .is-inview .cybloc-image {
+    animation: fadeInLeft 3s;
+    -webkit-animation: fadeInLeft 3s;
+    -moz-animation: fadeInLeft 3s;
+    -o-animation: fadeInLeft 3s;
+    -ms-animation: fadeInLeft 3s;
+  }
+
+  .is-inview .detail {
+    animation: fadeInRight 3s;
+    -webkit-animation: fadeInRight 3s;
+    -moz-animation: fadeInRight 3s;
+    -o-animation: fadeInRight 3s;
+    -ms-animation: fadeInRight 3s;
+  }
+
+  .is-inview .wrap-content .content-text {
+    animation: fadeInLeft 3s;
+    -webkit-animation: fadeInLeft 3s;
+    -moz-animation: fadeInLeft 3s;
+    -o-animation: fadeInLeft 3s;
+    -ms-animation: fadeInLeft 3s;
+  }
+
+  .is-inview .wrap-content .content {
+    animation: fadeInRight 3s;
+    -webkit-animation: fadeInRight 3s;
+    -moz-animation: fadeInRight 3s;
+    -o-animation: fadeInRight 3s;
+    -ms-animation: fadeInRight 3s;
+  }
