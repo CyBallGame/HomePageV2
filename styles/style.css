@@ -492,6 +492,7 @@ div.input-form #email input::placeholder {
     font-weight: bold;
     font-size: 40px;
     margin-bottom: 50px;
+    z-index: 3;
 }
 
 div#Community img {
@@ -862,6 +863,14 @@ div#form-image img {
 
     .header-section {
         margin-bottom: 30px;
+    }
+
+    div#form-email {
+        height: 300px;
+    }
+
+    #section6 .header-section {
+        margin-bottom: 0;
     }
 }
 
