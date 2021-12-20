@@ -24,3 +24,39 @@ $(document).ready(function () {
     } // End if
   });
 });
+
+
+$(window).scroll(function() {
+  var top_of_element1 = $("#light1").offset().top;
+  var bottom_of_element1 = $("#light1").offset().top + $("#light1").outerHeight();
+  var top_of_element2 = $("#light2").offset().top;
+  var bottom_of_element2 = $("#light2").offset().top + $("#light2").outerHeight();
+  var top_of_element3 = $("#light3").offset().top;
+  var bottom_of_element3 = $("#light3").offset().top + $("#light3").outerHeight();
+  var bottom_of_screen = $(window).scrollTop() + $(window).height();
+  var top_of_screen = $(window).scrollTop();
+
+  if ((bottom_of_screen > top_of_element1) && (top_of_screen < bottom_of_element1)) {
+     // The element is visible, trigger play click event
+     $("#light1").trigger('play')
+  } else {
+     // The element is not visible, trigger pause click event
+     $("#light1").trigger('pause')
+  }
+
+  if ((bottom_of_screen > top_of_element2) && (top_of_screen < bottom_of_element2)) {
+    // The element is visible, trigger play click event
+    $("#light2").trigger('play')
+ } else {
+    // The element is not visible, trigger pause click event
+    $("#light2").trigger('pause')
+ }
+
+ if ((bottom_of_screen > top_of_element3) && (top_of_screen < bottom_of_element3)) {
+  // The element is visible, trigger play click event
+  $("#light3").trigger('play')
+} else {
+  // The element is not visible, trigger pause click event
+  $("#light3").trigger('pause')
+}
+});

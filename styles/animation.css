@@ -47,6 +47,15 @@
     }
  } 
 
+ @keyframes fadeOut {
+  0% {opacity: 1;}
+  100% {opacity: 0;} 
+} 
+
+.mySlides {
+  animation: fadeIn 1.5s;
+}
+
  .is-inview #hero-image-block {
     animation: fadeIn 3s;
     -webkit-animation: fadeIn 3s;

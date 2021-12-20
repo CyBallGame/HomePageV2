@@ -89,33 +89,21 @@
                     <source src="./vendors/videos/light_1_VP9.webm" type="video/webm">
                 </video>
                 <div id="banner">
-                    <div id="slider">
-                        <a href="#" class="control_next">></a>
-                        <a href="#" class="control_prev"><</a>
+                    <!-- <div id="slider">
+                        <a href="#" class="control_next"></a>
+                        <a href="#" class="control_prev"></a>
                         <ul>
                           <li><img src="./vendors/images/banner1.png" alt=""></li>
                           <li><img src="./vendors/images/banner2.png" alt=""></li>
                         </ul>  
-                      </div>
-                    <!-- <div class="CSSgal">
-                        <s id="s1"></s>
-                        <s id="s2"></s>
+                      </div> -->
+                    <div id="slider">
+                        <img class="mySlides" src="./vendors/images/banner1.png" alt="">
+                        <img class="mySlides" src="./vendors/images/banner2.png" alt="">
 
-                        <div class="slider">
-                            <div>
-                                <img src="./vendors/images/banner1.png" alt="">
-
-                            </div>
-                            <div>
-                                <img src="./vendors/images/banner2.png" alt="">
-                            </div>
-                        </div>
-
-                        <div class="prevNext">
-                            <div><a class="prev" href="#s2"></a><a class="next" href="#s2"></a></div>
-                            <div><a class="prev" href="#s1"></a><a class="next" href="#s1"></a></div>
-                        </div>
-                    </div> -->
+                        <a class="control_next" onclick="plusDivs(-1)"></a>
+                        <a class="control_prev" onclick="plusDivs(1)"></a>
+                    </div>
                 </div>
                 <div id="hero-image-block">
                     <img src="./vendors/images/image1.png" alt="" id="hero-image">
@@ -202,10 +190,6 @@
                 <h3 class="header-section">Join our newsletter and socials!</h3>
                 <div id="form-email">
                     <div id="form-email-wrapper">
-                        <!-- <div id="input-form">
-                            <input type="email" placeholder="Enter your email">
-                            <span>Subcribe</span>
-                        </div> -->
                         <div id="sendgrid-subscription-widget" class="input-form">
                             <form id="sg-widget" data-token="f47bbbc05bebd32495ad143b57bd708e" onsubmit="return false;"
                                 class="form">
@@ -265,5 +249,4 @@
 <script src="./js/animation.js"></script>
 <script src="./js/click-trailer.js"></script>
 <script src="./js/slider.js"></script>
-
 </html>
