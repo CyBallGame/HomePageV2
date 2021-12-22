@@ -316,7 +316,7 @@ div#slider-feature {
     background-color: #fff;
     border-radius: 50%;
     cursor: pointer;
-    opacity: 0.5;
+    opacity: 0.2;
     margin: 0 8px;
 }
 
@@ -393,6 +393,8 @@ div#Community {
     flex-direction: column;
     align-items: center;
     z-index: 2;
+    font-weight: 500;
+    font-size: 20px;
 }
 
 div#Ecosystem {
@@ -850,13 +852,8 @@ html::-webkit-scrollbar-thumb
         text-align: center;
     }
 
-    div#banner {
-        /* height: 500px; */
-    }
-    
-    .CSSgal .slider > div img {
-        width: 100%;
-        height: auto;
+    #section1 div#section1-content {
+        font-size: 16px;
     }
 
     #Features .content .cybloc-image #card-desktop{
