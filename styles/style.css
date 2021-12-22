@@ -70,7 +70,7 @@ div#global-bot {
 
 #light1 {
     position: absolute;
-    top: 10%;
+    top: 0;
 }
 
 #light2 {
@@ -149,13 +149,12 @@ div#menu-none-mobile {
 }
 
 div#hero-image-block {
-    width: 75%;
+    width: 100%;
     position: relative;
-    top: -120px;
+    top: -300px;
     display: flex;
     justify-content: center;
     z-index: 4;
-    left: 50px;
     cursor: pointer;
 }
 
@@ -211,7 +210,7 @@ div#banner:before {
     position: relative;
     padding-top: 50px;
     padding-right: 100px;
-    width: 40%;
+    width: 60%;
 }
 
 #CyBloc .detail #image-text {
@@ -227,18 +226,20 @@ div#banner:before {
     height: 100%;
     background-image: url("../vendors/images/image21.png");
     background-repeat: no-repeat;
-    left: 20%;
-    top: 60px;
+    background-size: contain;
+    left: 10%;
+    top: 0;
 }
 
 #CyBloc .content .cybloc-image {
     position: relative;
+    width: 50%;
 }
 
 #Features .text-feature-container {
-    width: 40%;
+    width: 45%;
     /* display: flex; */
-    /* justify-content: center; */
+    /* justify-content: start; */
 }
 
 #Features .content {
@@ -253,6 +254,7 @@ div#banner:before {
 
 #Features .detail-feature-text.active {
     display: flex;
+    justify-content: start;
 }
 
 div#Features .header-section {
@@ -294,8 +296,7 @@ p.card-name {
 
 #Features .content .cybloc-image #card-desktop{
     display: block;
-    max-width: 400px;
-    width: 100%;
+    width: 400px;
 }
 
 #Features .content .cybloc-image #card-mobile{
@@ -306,7 +307,7 @@ div#slider-feature {
     width: 100%;
     justify-content: center;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -659,6 +660,15 @@ html::-webkit-scrollbar-thumb
     opacity: 0.5;
 }
 
+video#five-cyblocs {
+    width: 100%;
+    min-width: 1700px;
+}
+
+video#left-cyblocs {
+    width: 100%;
+}
+
 @media screen and (max-width: 1500px) {
     div#banner:before {
         background-size: cover;
@@ -677,7 +687,7 @@ html::-webkit-scrollbar-thumb
     }
 
     #Features .content {
-        width: 100%;
+        /* width: 100%; */
     }
 
     div#Community img {
@@ -808,6 +818,7 @@ html::-webkit-scrollbar-thumb
         width: 100%;
         height: 500px;
         align-items: end;
+        justify-content: center;
     }
     
     #Features .text-feature-container {
@@ -862,8 +873,7 @@ html::-webkit-scrollbar-thumb
     
     #Features .content .cybloc-image #card-mobile{
         display: block;
-        max-width: 350px;
-        width: 90%;
+        width: 300px;
     }
 
     #CyBloc .detail {
@@ -941,7 +951,7 @@ html::-webkit-scrollbar-thumb
         position: absolute;
         transform: rotate(90deg);
         width: 100%;
-        height: 130%;
+        height: 150%;
         top: 0;
         right: 30%;
     }
@@ -1023,11 +1033,27 @@ html::-webkit-scrollbar-thumb
         font-size: 22px;
         font-weight: bold;
     }
+    video#five-cyblocs {
+        min-width: unset;
+        width: 200%;
+    }
 }
 
 @media screen and (max-width: 600px) {
     div#form-image-mobile:after {
         right: 0px;
         bottom: 0;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    #Ecosystem .wrap-content {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    video#light3 {
+        height: 105%;
+        right: -5%;
     }
 }

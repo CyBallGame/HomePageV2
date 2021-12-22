@@ -1,5 +1,7 @@
 $(document).ready(function () {
   var oldId = null;
+  var maxWidth = 400;
+  var maxHeight = 400;
 
   $(".tabs-controls__link").click(function (e) {
     e.preventDefault();
@@ -35,6 +37,16 @@ $(document).ready(function () {
             $(".card").eq(index).removeClass("hidden");
           }, timing - index * 100);
         }
+
+        if ($(window).width() > 1000) {
+            window.setTimeout(function () {
+                $(".card").eq(index).css("width", `${maxWidth - 10*(index - currentId + 1)}px`);
+                $(".card").eq(index).css("height", `${maxWidth - 10*(index - currentId + 1)}px`);
+                $(".card").eq(index).css("transform", `translateX(${0 - 30*(index - currentId + 1)}px) translateY(0px)`);
+            }, index * 120);
+        } else {
+            $(".card").eq(index).css("transform", `translateX(0px) translateY(${0 - 30*(index - currentId + 1)}px)`);
+        }
       });
     } else {
       $(".card").each(function (index) {
@@ -42,6 +54,16 @@ $(document).ready(function () {
           window.setTimeout(function () {
             $(".card").eq(index).addClass("hidden");
           }, index * 100);
+        } else {
+            if ($(window).width() > 1000) {
+                window.setTimeout(function () {
+                    $(".card").eq(index).css("width", `${maxWidth - 10*(index - currentId + 1)}px`);
+                    $(".card").eq(index).css("height", `${maxWidth - 10*(index - currentId + 1)}px`);
+                    $(".card").eq(index).css("transform", `translateX(${0 - 30*(index - currentId + 1)}px) translateY(0px)`);
+                }, index * 120);
+            } else {
+                $(".card").eq(index).css("transform", `translateX(0px) translateY(${0 - 30*(index - currentId + 1)}px)`);
+            }
         }
       });
     }
