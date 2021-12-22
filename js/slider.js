@@ -20,19 +20,19 @@ function showDivs(n) {
   x[slideIndex - 1].style.display = "block";
 }
 
-var slideFeatureIndex = 1;
-showDivsFeatures(slideIndex);
+// var slideFeatureIndex = 1;
+// showDivsFeatures(slideIndex);
 
-function showDivsFeatures(n) {
-    console.log(n)
-    var j;
-    var m = document.getElementsByClassName("slider-feature-content");
-    var dot = document.getElementsByClassName("dot-item")
-    slideFeatureIndex = n;
-    for (j = 0; j < m.length; j++) {
-      m[j].style.display = "none";
-      dot[j].style.opacity = "0.5";
-    }
-    m[slideFeatureIndex - 1].style.display = "flex";
-    dot[slideFeatureIndex - 1].style.opacity = "0.8";
-  }
+// function showDivsFeatures(n) {
+//     console.log(n)
+//     var j;
+//     var m = document.getElementsByClassName("slider-feature-content");
+//     var dot = document.getElementsByClassName("dot-item")
+//     slideFeatureIndex = n;
+//     for (j = 0; j < m.length; j++) {
+//       m[j].style.display = "none";
+//       dot[j].style.opacity = "0.5";
+//     }
+//     m[slideFeatureIndex - 1].style.display = "flex";
+//     dot[slideFeatureIndex - 1].style.opacity = "0.8";
+//   }

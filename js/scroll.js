@@ -26,15 +26,15 @@ $(document).ready(function () {
 });
 
 $(window).scroll(function () {
-  var top_of_element1 = $("#light1").offset().top;
+  var top_of_element1 = $("#banner").offset().top;
   var bottom_of_element1 =
-    $("#light1").offset().top + $("#light1").outerHeight();
-  var top_of_element2 = $("#light2").offset().top;
+    $("#banner").offset().top + $("#banner").outerHeight();
+  var top_of_element2 = $("#content-cybloc").offset().top;
   var bottom_of_element2 =
-    $("#light2").offset().top + $("#light2").outerHeight();
-  var top_of_element3 = $("#light3").offset().top;
+    $("#content-cybloc").offset().top + $("#content-cybloc").outerHeight();
+  var top_of_element3 = $("#content-eco").offset().top;
   var bottom_of_element3 =
-    $("#light3").offset().top + $("#light3").outerHeight();
+    $("#content-eco").offset().top + $("#content-eco").outerHeight();
   var bottom_of_screen = $(window).scrollTop() + $(window).height();
   var top_of_screen = $(window).scrollTop();
 
@@ -57,7 +57,7 @@ $(window).scroll(function () {
     $("#light2").trigger("play");
   } else {
     // The element is not visible, trigger pause click event
-    $("#light2").trigger("pause");
+    $("#light2").trigger("load");
   }
 
   if (
@@ -68,6 +68,6 @@ $(window).scroll(function () {
     $("#light3").trigger("play");
   } else {
     // The element is not visible, trigger pause click event
-    $("#light3").trigger("pause");
+    $("#light3").trigger("load");
   }
 });
