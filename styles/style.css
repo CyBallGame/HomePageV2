@@ -70,12 +70,16 @@ div#global-bot {
 
 #light1 {
     position: absolute;
-    top: 0;
+    width: 100%;
+    height: auto;
+    top: -10%;
 }
 
 #light2 {
     position: absolute;
-    top: -15%;
+    top: -50%;
+    width: 100%;
+    height: auto;
 }
 
 #light3 {
@@ -151,7 +155,7 @@ div#menu-none-mobile {
 div#hero-image-block {
     width: 100%;
     position: relative;
-    top: -300px;
+    top: -160px;
     display: flex;
     justify-content: center;
     z-index: 4;
@@ -182,7 +186,7 @@ div#main-content {
 }
 
 img#hero-image {
-    width: 100%;
+    width: 85%;
 }
 
 div#banner:before {
@@ -696,6 +700,13 @@ video#left-cyblocs {
 }
 
 @media screen and (max-width: 1000px) {
+    video#light1 {
+        top: 15%;
+    }
+    
+    video#light2 {
+        top: 0;
+    }
     div#header {
         justify-content: center;
     }
@@ -944,7 +955,7 @@ video#left-cyblocs {
     }
 
     video#light1 {
-        top: -30%;
+        /* top: -30%; */
     }
 
     #light3 {
