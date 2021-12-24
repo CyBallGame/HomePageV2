@@ -86,11 +86,13 @@
         </div>
         <div id="main-content">
             <div id="section1">
-                <video muted id="light1">
+                <video muted id="light1" playsinline>
                     <source src="./vendors/videos/light_1_VP9.webm" type="video/webm">
                 </video>
+                <img src="./vendors/images/light1.png" alt="" id="light1-img">
                 <div id="banner">
-                    <div id="slider" onclick="console.log(112123123123)">
+                    <img src="./vendors/images/frame-banner.png" alt="" id="frame-banner">
+                    <div id="slider">
                         <img class="mySlides" src="./vendors/images/banner1.png" alt="">
                         <img class="mySlides" src="./vendors/images/banner2.png" alt="">
 
@@ -109,16 +111,36 @@
                 </div>
             </div>
             <div id="CyBloc" class="section">
-                <video muted id="light2">
+                <video muted id="light2" playsinline>
                     <source src="./vendors/videos/light_2_VP9.webm" type="video/webm">
                 </video>
+                <img src="./vendors/images/light2.png" alt="" id="light2-img">
                 <h3 class="header-section">What builds a CyBloc?</h3>
                 <div class="content" id="content-cybloc">
-                    <div class="cybloc-image">
-                        <!-- <img src="./vendors/images/image2.png" alt=""> -->
-                        <video autoplay loop muted id="left-cyblocs">
+                    <div class="cybloc-image" id="video-cybloc">
+                        <video autoplay loop muted class="left-cyblocs">
                             <source src="./vendors/videos/CyBloc1.webm" type="video/webm">
                         </video>
+                        <video autoplay loop muted class="left-cyblocs">
+                            <source src="./vendors/videos/CyBloc2.webm" type="video/webm">
+                        </video>
+                        <video autoplay loop muted class="left-cyblocs">
+                            <source src="./vendors/videos/CyBloc3.webm" type="video/webm">
+                        </video>
+                        <video autoplay loop muted class="left-cyblocs">
+                            <source src="./vendors/videos/CyBloc4.webm" type="video/webm">
+                        </video>
+                        <a class="control_next" onclick="plusDivsCyblocs(1)"></a>
+                        <a class="control_prev" onclick="plusDivsCyblocs(-1)"></a>
+                        <div id="dot-items-cybloc">
+                            <div class="dot-item dot-item-cybloc" onclick="selectCybloc(1)"></div>
+                            <div class="dot-item dot-item-cybloc" onclick="selectCybloc(2)"></div>
+                            <div class="dot-item dot-item-cybloc" onclick="selectCybloc(3)"></div>
+                            <div class="dot-item dot-item-cybloc" onclick="selectCybloc(4)"></div>
+                        </div>
+                    </div>
+                    <div class="cybloc-image" id="image-cybloc">
+                        <img src="./vendors/images/image2.png" alt="">
                     </div>
                     <div class="detail">
                         <img id="image-text" src="./vendors/images/image-for-text.png" alt="">
@@ -218,6 +240,8 @@
                             </div>
                         </div>
                     </section>
+                    <a class="control_next" id="slider-feature-next"></a>
+                    <a class="control_prev" id="slider-feature-prev"></a>
                 </div>
                 <div id="group-dot-slide-feature">
                     <ul class="tabs-controls">
@@ -249,9 +273,10 @@
                 </div>
             </div>
             <div id="Ecosystem" class="section">
-                <video muted id="light3">
+                <video muted id="light3" playsinline>
                     <source src="./vendors/videos/light_3_VP9.webm" type="video/webm">
                 </video>
+                <img src="./vendors/images/light3.png" alt="" id="light3-img">
                 <h3 class="header-section">Ecosystem</h3>
                 <div class="wrap-content" id="content-eco">
                     <div class="content">
@@ -349,5 +374,5 @@
 <script src="./js/click-action.js"></script>
 <script src="./js/slider.js"></script>
 <script src="./js/features.js"></script>
-
+<script type="text/javascript" src="./js/index.js"></script>
 </html>

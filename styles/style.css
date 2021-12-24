@@ -12,6 +12,17 @@
     padding: 0;
 }
 
+body {
+    background-image: url(../vendors/images/background1.png);
+    background-color: #ddd;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: initial;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
 h3 {
     text-align: center;
     font-weight: bold;
@@ -19,14 +30,30 @@ h3 {
     color: white;
 }
 
-#landing-page {
-    background-image: url(../vendors/images/background1.png);
-    background-color: #ddd;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: initial;
+#light1-img {
+    position: absolute;
+    width: 100%;
     height: auto;
-    position: relative;
+    top: 0%;
+}
+
+#light2-img {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: auto;
+}
+
+div#image-cybloc img {width: 100%;height: 100%;}
+
+#light3-img {
+    position: absolute;
+    top: 50%;
+}
+
+#landing-page {
+    max-width: 1500px;
+    height: auto;
     display: flex;
     align-items: center;
     overflow-x: hidden;
@@ -64,7 +91,7 @@ div#global-bot {
 }
 
 #banner {
-    width: 80%;
+    width: 85%;
     position: relative;
 }
 
@@ -89,12 +116,10 @@ div#global-bot {
 
 img#image-banner {
     width: 100%;
-    /* position: absolute; */
 }
 
 img#frame-image {
     width: 100%;
-    /* position: absolute; */
 }
 
 span#hide-trailer {
@@ -116,7 +141,7 @@ span#hide-trailer {
 
 div#header {
     height: 100px;
-    width: 70%;
+    width: 85%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -153,7 +178,7 @@ div#menu-none-mobile {
 }
 
 div#hero-image-block {
-    width: 100%;
+    width: 95%;
     position: relative;
     top: -160px;
     display: flex;
@@ -187,25 +212,22 @@ div#main-content {
 
 img#hero-image {
     width: 85%;
+    height: 100%;
 }
 
-div#banner:before {
-    content: '';
-    position: absolute;
+#banner #frame-banner {
     width: 90%;
     height: 100%;
-    background-position: center;
-    background-image: url("../vendors/images/frame-banner.png");
-    background-repeat: no-repeat;
-    background-size: contain;
+    position: absolute;
     z-index: 3;
     left: 5%;
+    cursor: pointer;
 }
 
 #CyBloc .content {
     display: flex;
     justify-content: space-between;
-    width: 85%;
+    width: 90%;
 }
 
 #CyBloc .detail {
@@ -223,7 +245,7 @@ div#banner:before {
     top: 0;
 }
 
-#CyBloc .content .cybloc-image:before {
+#CyBloc .content .cybloc-image#image-cybloc:before {
     content: '';
     width: 100%;
     position: absolute;
@@ -242,14 +264,11 @@ div#banner:before {
 
 #Features .text-feature-container {
     width: 45%;
-    /* display: flex; */
-    /* justify-content: start; */
 }
 
 #Features .content {
     display: flex;
     justify-content: space-around;
-    /* width: 85%; */
 }
 
 #Features .detail-feature-text {
@@ -301,6 +320,7 @@ p.card-name {
 #Features .content .cybloc-image #card-desktop{
     display: block;
     width: 400px;
+    height: 100%;
 }
 
 #Features .content .cybloc-image #card-mobile{
@@ -308,11 +328,12 @@ p.card-name {
 }
 
 div#slider-feature {
-    width: 100%;
+    width: 90%;
     justify-content: center;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
 }
 
 .dot-item {
@@ -323,6 +344,12 @@ div#slider-feature {
     cursor: pointer;
     opacity: 0.2;
     margin: 0 8px;
+}
+
+#dot-items-cybloc {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
 }
 
 div#group-dot-slide-feature {
@@ -337,8 +364,8 @@ div#group-dot-slide-feature {
 
 #Ecosystem .content {
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items: flex-end;
+    justify-content: space-around;
 }
 
 #Ecosystem .header-section {
@@ -348,38 +375,30 @@ div#group-dot-slide-feature {
 #Ecosystem .content-text {
     display: flex;
     align-items: flex-start;
-    justify-content: center;
+    justify-content: space-around;
     margin-top: 25px;
 }
 
 #Ecosystem .content .detail-item {
-    width: 275px;
+    min-width: 250px;
     height: 300px;
     display: flex;
     justify-content: center;
 }
 
 #Ecosystem .content-text .detail-item {
-    width: 275px;
+    width: 250px;
     color: white;
-    margin-left: 15px;
+    text-align: center;
 }
 .wrap-content {
     z-index: 2;
+    width: 85%;
 }
 
 #Ecosystem .content .detail-item#image-center {
     position: relative;
-}
-#Ecosystem .content .detail-item#image-center:before {
-    position: absolute;
-    content: '';
-    width: 335px;
-    height: 378px;
-    background-image: url("../vendors/images/image321.png");
-    top: -130px;
-    right: 110px;
-    background-size: contain;
+    height: 200px;
 }
 
 div#Community {
@@ -400,6 +419,7 @@ div#Community {
     z-index: 2;
     font-weight: 500;
     font-size: 20px;
+    width: 80%;
 }
 
 div#Ecosystem {
@@ -573,7 +593,7 @@ div.input-form #email input::placeholder {
 }
 
 div#Community img {
-    width: 70%;
+    width: 85%;
 }
 
 #section1 div#section1-content p {
@@ -595,7 +615,7 @@ div#footer {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 70%;
+    width: 85%;
     margin-bottom: 20px;
     z-index: 2;
 }
@@ -669,8 +689,17 @@ video#five-cyblocs {
     min-width: 1700px;
 }
 
-video#left-cyblocs {
+.left-cyblocs {
     width: 100%;
+    max-width: 700px;
+    max-height: 700px;
+    min-width: 280px;
+    min-height: 280px;
+    aspect-ratio: 1;
+}
+
+#Ecosystem .content .detail-item img {
+    height: 100%;
 }
 
 @media screen and (max-width: 1500px) {
@@ -690,21 +719,20 @@ video#left-cyblocs {
         width: 100%;
     }
 
-    #Features .content {
-        /* width: 100%; */
-    }
-
     div#Community img {
         width: 100%;
     }
 }
 
 @media screen and (max-width: 1000px) {
-    video#light1 {
+    #landing-page {
+        position: relative;
+    }
+    video#light1, #light1-img {
         top: 15%;
     }
     
-    video#light2 {
+    video#light2, #light2-img {
         top: 0;
     }
     div#header {
@@ -747,6 +775,7 @@ video#left-cyblocs {
     img#hero-image {
         width: 150%;
         margin-left: 40px;
+        height: 100%;
     }
 
     #CyBloc .detail {
@@ -759,8 +788,6 @@ video#left-cyblocs {
 
     div#form-email {
         height: 450px;
-        /* background-image: unset; */
-        /* background-color: rgba(31,25,48, 0.5); */
         width: 80%;
         padding: 30px;
         background-image: url(../vendors/images/card-mobile.png);
@@ -850,6 +877,9 @@ video#left-cyblocs {
 }
 
 @media screen and (max-width: 767px) {
+    #Ecosystem .content .detail-item#image-center img {
+        width: 140px;
+    }
     h3.header-section {
         font-size: 27px;
     }
@@ -885,6 +915,7 @@ video#left-cyblocs {
     #Features .content .cybloc-image #card-mobile{
         display: block;
         width: 300px;
+        height: 100%;
     }
 
     #CyBloc .detail {
@@ -897,36 +928,28 @@ video#left-cyblocs {
 
     #Ecosystem .wrap-content {
         display: flex;
+        justify-content: center;
     }
     
     #Ecosystem .content {
         flex-direction: column;
+        width: 45%;
+        align-items: center;
     }
     
     #Ecosystem .content-text {
         flex-direction: column;
-        justify-content: space-around;
-        align-items: flex-start;
+        justify-content: space-between;
+        width: 40%;
     }
 
     #Ecosystem .content-text .detail-item {
         width: auto;
-    }
-
-    #Ecosystem .content .detail-item#image-center:before {
-        position: absolute;
-        content: '';
-        width: 70px;
-        height: 140px;
-        background-image: url("../vendors/images/image32222.png");
-        top: -75px;
-        left: 10px;
-        right: unset;
-        background-repeat: no-repeat;
+        text-align: left;
     }
 
     #Ecosystem .content .detail-item img {
-        width: 60px;
+        width: 90px;
     }
 
     #Ecosystem .content .detail-item:first-child img {
@@ -934,14 +957,16 @@ video#left-cyblocs {
     }
 
     #Ecosystem .content .detail-item {
-        width: 200px;
+        width: 100%;
         height: auto;
         display: flex;
-        justify-content: flex-end;
+        justify-content: center;
     }
     
     #Ecosystem .content .detail-item#image-center {
-    justify-content: center;
+    justify-content: flex-start;
+    height: auto;
+    margin: 35px 0;
     }
 
     .detail-item h4 {
@@ -954,17 +979,19 @@ video#left-cyblocs {
         font-weight: 500;
     }
 
-    video#light1 {
-        /* top: -30%; */
-    }
-
-    #light3 {
+    #light3, #light3-img {
         position: absolute;
         transform: rotate(90deg);
-        width: 100%;
+        width: 130%;
         height: 150%;
         top: 0;
-        right: 30%;
+        right: 20%;
+    }
+
+    #light3-img {
+    width: 100%;
+    height: auto;
+    top: 60%;
     }
 
     #CyBloc .detail h4 {
@@ -1063,8 +1090,22 @@ video#left-cyblocs {
         align-items: center;
     }
     
-    video#light3 {
-        height: 105%;
-        right: -5%;
+    video#light3, #light3-img {
+        height: 80%;
+        right: -15%;
+        width: 150%;
+    }
+
+    #light3-img {
+    top: 35%;
+    right: 0;
+    }
+    #Ecosystem .content .detail-item#image-center {
+        justify-content: center;
+    }
+    
+    #Ecosystem .content-text .detail-item {
+        text-align: center;
+        margin-top: 35px;
     }
 }

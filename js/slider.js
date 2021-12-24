@@ -20,19 +20,41 @@ function showDivs(n) {
   x[slideIndex - 1].style.display = "block";
 }
 
-// var slideFeatureIndex = 1;
-// showDivsFeatures(slideIndex);
+var slideCyblocsIndex = 1;
+showDivsCyblocs(slideCyblocsIndex);
 
-// function showDivsFeatures(n) {
-//     console.log(n)
-//     var j;
-//     var m = document.getElementsByClassName("slider-feature-content");
-//     var dot = document.getElementsByClassName("dot-item")
-//     slideFeatureIndex = n;
-//     for (j = 0; j < m.length; j++) {
-//       m[j].style.display = "none";
-//       dot[j].style.opacity = "0.5";
-//     }
-//     m[slideFeatureIndex - 1].style.display = "flex";
-//     dot[slideFeatureIndex - 1].style.opacity = "0.8";
-//   }
+function plusDivsCyblocs(n) {
+  showDivsCyblocs((slideCyblocsIndex += n));
+}
+
+function showDivsCyblocs(n) {
+    let j;
+    let m = document.getElementsByClassName("left-cyblocs");
+    let dotCyblocs = document.getElementsByClassName("dot-item-cybloc");
+    if (n > m.length) {
+      slideCyblocsIndex = 1;
+    } else if (n < 1) {
+      slideCyblocsIndex = m.length;
+    } else {
+      slideCyblocsIndex = n;
+    }
+    for (j = 0; j < m.length; j++) {
+      m[j].style.display = "none";
+      dotCyblocs[j].style.opacity = "0.2";
+    }
+    m[slideCyblocsIndex - 1].style.display = "block";
+    dotCyblocs[slideCyblocsIndex - 1].style.opacity = "0.8";
+  }
+
+  function selectCybloc(index) {
+    let j;
+    let m = document.getElementsByClassName("left-cyblocs");
+    let dotCyblocs = document.getElementsByClassName("dot-item-cybloc");
+    slideCyblocsIndex = index;
+    for (j = 0; j < m.length; j++) {
+      m[j].style.display = "none";
+      dotCyblocs[j].style.opacity = "0.2";
+    }
+    m[slideCyblocsIndex - 1].style.display = "block";
+    dotCyblocs[slideCyblocsIndex - 1].style.opacity = "0.8";
+  }

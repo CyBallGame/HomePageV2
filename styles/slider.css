@@ -1,4 +1,4 @@
-#slider a {
+a.control_next, a.control_prev {
     background-repeat: no-repeat;
     background-position: center;
     position: absolute;
@@ -16,37 +16,68 @@
     cursor: pointer;
 }
 
-#slider .control_prev {
+.control_prev {
     background-image: url("../vendors/images/arr-prev.png");
     left: 0;
 }
 
-#slider .control_next {
+.control_next {
     background-image: url("../vendors/images/arr-next.png");
     right: 0;
 }
 
-#slider a:hover {
+a.control_next:hover, a.control_prev:hover {
 	opacity: 1;
 }
 
+#slider-feature .control_prev, #content-cybloc .control_prev {
+    background-image: url("../vendors/images/arr-prev.png");
+    left: 40px;
+    width: 40px;
+    height: 40px;
+}
+
+#slider-feature .control_next, #content-cybloc .control_next {
+    background-image: url("../vendors/images/arr-next.png");
+    right: 40px;
+    width: 40px;
+    height: 40px;
+}
+
 @media screen and (max-width: 1000px) {
-	#slider a {
+	a.control_next, a.control_prev {
 		width: 40px;
 		height: 40px;
 	}
+    #slider-feature .control_prev, #content-cybloc .control_prev {
+        width: 30px;
+        height: 30px;
+    }
+    
+    #slider-feature .control_next, #content-cybloc .control_next {
+        width: 30px;
+        height: 30px;
+    }
 }
 
 @media screen and (max-width: 767px) {
-	#slider a {
+	a.control_next, a.control_prev {
 		width: 30px;
 		height: 30px;
 	}
+    #slider-feature .control_prev {
+        top: 70%;
+    }
+    
+    #slider-feature .control_next {
+        top: 70%;
+    }
 }
 
 #slider .mySlides {
 	width: 90%;
 	aspect-ratio: auto;
+    height: 100%;
 }
 
 div#slider {

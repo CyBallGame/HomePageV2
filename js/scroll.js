@@ -43,9 +43,11 @@ $(window).scroll(function () {
     top_of_screen < bottom_of_element1
   ) {
     // The element is visible, trigger play click event
+    // $("#light1").css({ display: "block" });
     $("#light1").trigger("play");
   } else {
     // The element is not visible, trigger pause click event
+    // $("#light1").css({ display: "none" });
     $("#light1").trigger("pause");
   }
 
@@ -54,10 +56,12 @@ $(window).scroll(function () {
     top_of_screen < bottom_of_element2
   ) {
     // The element is visible, trigger play click event
+    // $("#light2").css({ display: "block" });
     $("#light2").trigger("play");
   } else {
     // The element is not visible, trigger pause click event
-    $("#light2").trigger("load");
+    // $("#light2").css({ display: "none" });
+    $("#light2").trigger("pause");
   }
 
   if (
@@ -65,9 +69,11 @@ $(window).scroll(function () {
     top_of_screen < bottom_of_element3
   ) {
     // The element is visible, trigger play click event
+    // $("#light3").css({ display: "block" });
     $("#light3").trigger("play");
   } else {
     // The element is not visible, trigger pause click event
-    $("#light3").trigger("load");
+    // $("#light3").css({ display: "none" });
+    $("#light3").trigger("pause");
   }
 });

@@ -8,7 +8,7 @@ $(document).ready(function () {
     $("#video-trailer").css({ display: "none" });
   });
   
-  // $("#slider").click(function () {
-  //   window.open('https://genesis.cyball.com/#/marketplace/cyblocs', '_blank');
-  // });
+  $("#frame-banner").click(function () {
+    window.open('https://genesis.cyball.com/#/marketplace/cyblocs', '_blank');
+  });
 });
