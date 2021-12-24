@@ -66,11 +66,15 @@ a.control_next:hover, a.control_prev:hover {
 		height: 30px;
 	}
     #slider-feature .control_prev {
-        top: 70%;
+        /* top: 70%; */
+        opacity: 0.4;
+        left: 5px;
     }
     
     #slider-feature .control_next {
-        top: 70%;
+        /* top: 70%; */
+        opacity: 0.4;
+        right: 5px;
     }
 }
 

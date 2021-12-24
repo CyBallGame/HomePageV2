@@ -2,6 +2,8 @@ $(document).ready(function () {
   var oldId = 1;
   var maxWidth = 400;
   var maxHeight = 400;
+  var maxWidthMobile = 350;
+  var maxHeightMobile = 350;
 
   $(".tabs-controls__link").click(function (e) {
     e.preventDefault();
@@ -38,14 +40,18 @@ $(document).ready(function () {
           }, timing - index * 100);
         }
 
-        if ($(window).width() > 1000) {
+        if ($(window).width() > 767) {
             window.setTimeout(function () {
                 $(".card").eq(index).css("width", `${maxWidth - 10*(index - currentId + 1)}px`);
-                $(".card").eq(index).css("height", `${maxWidth - 10*(index - currentId + 1)}px`);
+                $(".card").eq(index).css("height", `${maxHeight - 10*(index - currentId + 1)}px`);
                 $(".card").eq(index).css("transform", `translateX(${0 - 30*(index - currentId + 1)}px) translateY(0px)`);
             }, index * 120);
         } else {
+          window.setTimeout(function () {
+            $(".card").eq(index).css("width", `${maxWidthMobile - 10*(index - currentId + 1)}px`);
+            $(".card").eq(index).css("height", `${maxHeightMobile - 10*(index - currentId + 1)}px`);
             $(".card").eq(index).css("transform", `translateX(0px) translateY(${0 - 30*(index - currentId + 1)}px)`);
+          }, index * 120);
         }
       });
     } else {
@@ -55,14 +61,18 @@ $(document).ready(function () {
             $(".card").eq(index).addClass("hidden");
           }, index * 100);
         } else {
-            if ($(window).width() > 1000) {
+            if ($(window).width() > 767) {
                 window.setTimeout(function () {
                     $(".card").eq(index).css("width", `${maxWidth - 10*(index - currentId + 1)}px`);
-                    $(".card").eq(index).css("height", `${maxWidth - 10*(index - currentId + 1)}px`);
+                    $(".card").eq(index).css("height", `${maxHeight - 10*(index - currentId + 1)}px`);
                     $(".card").eq(index).css("transform", `translateX(${0 - 30*(index - currentId + 1)}px) translateY(0px)`);
                 }, index * 120);
             } else {
+              window.setTimeout(function () {
+                $(".card").eq(index).css("width", `${maxWidthMobile - 10*(index - currentId + 1)}px`);
+                $(".card").eq(index).css("height", `${maxHeightMobile - 10*(index - currentId + 1)}px`);
                 $(".card").eq(index).css("transform", `translateX(0px) translateY(${0 - 30*(index - currentId + 1)}px)`);
+              }, index * 120);
             }
         }
       });
@@ -112,14 +122,18 @@ $(document).ready(function () {
           }, timing - index * 100);
         }
 
-        if ($(window).width() > 1000) {
+        if ($(window).width() > 767) {
             window.setTimeout(function () {
                 $(".card").eq(index).css("width", `${maxWidth - 10*(index - currentId + 1)}px`);
-                $(".card").eq(index).css("height", `${maxWidth - 10*(index - currentId + 1)}px`);
+                $(".card").eq(index).css("height", `${maxHeight - 10*(index - currentId + 1)}px`);
                 $(".card").eq(index).css("transform", `translateX(${0 - 30*(index - currentId + 1)}px) translateY(0px)`);
             }, index * 120);
         } else {
+          window.setTimeout(function () {
+            $(".card").eq(index).css("width", `${maxWidthMobile - 10*(index - currentId + 1)}px`);
+            $(".card").eq(index).css("height", `${maxHeightMobile - 10*(index - currentId + 1)}px`);
             $(".card").eq(index).css("transform", `translateX(0px) translateY(${0 - 30*(index - currentId + 1)}px)`);
+          }, index * 120);
         }
       });
     } else {
@@ -129,14 +143,18 @@ $(document).ready(function () {
             $(".card").eq(index).addClass("hidden");
           }, index * 100);
         } else {
-            if ($(window).width() > 1000) {
+            if ($(window).width() > 767) {
                 window.setTimeout(function () {
                     $(".card").eq(index).css("width", `${maxWidth - 10*(index - currentId + 1)}px`);
-                    $(".card").eq(index).css("height", `${maxWidth - 10*(index - currentId + 1)}px`);
+                    $(".card").eq(index).css("height", `${maxHeight - 10*(index - currentId + 1)}px`);
                     $(".card").eq(index).css("transform", `translateX(${0 - 30*(index - currentId + 1)}px) translateY(0px)`);
                 }, index * 120);
             } else {
+              window.setTimeout(function () {
+                $(".card").eq(index).css("width", `${maxWidthMobile - 10*(index - currentId + 1)}px`);
+                $(".card").eq(index).css("height", `${maxHeightMobile - 10*(index - currentId + 1)}px`);
                 $(".card").eq(index).css("transform", `translateX(0px) translateY(${0 - 30*(index - currentId + 1)}px)`);
+              }, index * 120);
             }
         }
       });
@@ -186,14 +204,18 @@ $(document).ready(function () {
           }, timing - index * 100);
         }
 
-        if ($(window).width() > 1000) {
+        if ($(window).width() > 767) {
             window.setTimeout(function () {
                 $(".card").eq(index).css("width", `${maxWidth - 10*(index - currentId + 1)}px`);
-                $(".card").eq(index).css("height", `${maxWidth - 10*(index - currentId + 1)}px`);
+                $(".card").eq(index).css("height", `${maxHeight - 10*(index - currentId + 1)}px`);
                 $(".card").eq(index).css("transform", `translateX(${0 - 30*(index - currentId + 1)}px) translateY(0px)`);
             }, index * 120);
         } else {
+          window.setTimeout(function () {
+            $(".card").eq(index).css("width", `${maxWidthMobile - 10*(index - currentId + 1)}px`);
+            $(".card").eq(index).css("height", `${maxHeightMobile - 10*(index - currentId + 1)}px`);
             $(".card").eq(index).css("transform", `translateX(0px) translateY(${0 - 30*(index - currentId + 1)}px)`);
+          }, index * 120);
         }
       });
     } else {
@@ -203,14 +225,18 @@ $(document).ready(function () {
             $(".card").eq(index).addClass("hidden");
           }, index * 100);
         } else {
-            if ($(window).width() > 1000) {
+            if ($(window).width() > 767) {
                 window.setTimeout(function () {
                     $(".card").eq(index).css("width", `${maxWidth - 10*(index - currentId + 1)}px`);
-                    $(".card").eq(index).css("height", `${maxWidth - 10*(index - currentId + 1)}px`);
+                    $(".card").eq(index).css("height", `${maxHeight - 10*(index - currentId + 1)}px`);
                     $(".card").eq(index).css("transform", `translateX(${0 - 30*(index - currentId + 1)}px) translateY(0px)`);
                 }, index * 120);
             } else {
+              window.setTimeout(function () {
+                $(".card").eq(index).css("width", `${maxWidthMobile - 10*(index - currentId + 1)}px`);
+                $(".card").eq(index).css("height", `${maxWidthMobile - 10*(index - currentId + 1)}px`);
                 $(".card").eq(index).css("transform", `translateX(0px) translateY(${0 - 30*(index - currentId + 1)}px)`);
+              }, index * 120);
             }
         }
       });
