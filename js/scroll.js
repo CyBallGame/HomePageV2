@@ -47,7 +47,6 @@ $(window).scroll(function () {
   ) {
     $("#light1").trigger("play");
     firstPlay1++;
-    console.log(firstPlay1, 'firstPlay1')
   } else {
   }
 
