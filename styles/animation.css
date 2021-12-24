@@ -57,49 +57,49 @@
 }
 
  .is-inview #hero-image-block {
-    animation: slideInUp 1.5s;
-    -webkit-animation: slideInUp 1.5s;
-    -moz-animation: slideInUp 1.5s;
-    -o-animation: slideInUp 1.5s;
-    -ms-animation: slideInUp 1.5s;
+    animation: slideInUp 1.5s, fadeIn 1.5s;
+    -webkit-animation: slideInUp 1.5s, fadeIn 1.5s;
+    -moz-animation: slideInUp 1.5s, fadeIn 1.5s;
+    -o-animation: slideInUp 1.5s, fadeIn 1.5s;
+    -ms-animation: slideInUp 1.5s, fadeIn 1.5s;
   }
 
   .is-inview .cybloc-image {
-    animation: slideInUp 1.5s;
-    -webkit-animation: slideInUp 1.5s;
-    -moz-animation: slideInUp 1.5s;
-    -o-animation: slideInUp 1.5s;
-    -ms-animation: slideInUp 1.5s;
+    animation: slideInUp 1.5s, fadeIn 1.5s;
+    -webkit-animation: slideInUp 1.5s, fadeIn 1.5s;
+    -moz-animation: slideInUp 1.5s, fadeIn 1.5s;
+    -o-animation: slideInUp 1.5s, fadeIn 1.5s;
+    -ms-animation: slideInUp 1.5s, fadeIn 1.5s;
   }
 
   .is-inview .detail {
-    animation: slideInUp 1.5s;
-    -webkit-animation: slideInUp 1.5s;
-    -moz-animation: slideInUp 1.5s;
-    -o-animation: slideInUp 1.5s;
-    -ms-animation: slideInUp 1.5s;
+    animation: slideInUp 1.5s, fadeIn 1.5s;
+    -webkit-animation: slideInUp 1.5s, fadeIn 1.5s;
+    -moz-animation: slideInUp 1.5s, fadeIn 1.5s;
+    -o-animation: slideInUp 1.5s, fadeIn 1.5s;
+    -ms-animation: slideInUp 1.5s, fadeIn 1.5s;
   }
 
   .is-inview .wrap-content .content .detail-item:nth-child(1){
-    animation: slideInUp 1s;
-    -webkit-animation: slideInUp 1s;
-    -moz-animation: slideInUp 1s;
-    -o-animation: slideInUp 1s;
-    -ms-animation: slideInUp 1s;
+    animation: slideInUp 1s, fadeIn 1s;
+    -webkit-animation: slideInUp 1s, fadeIn 1s;
+    -moz-animation: slideInUp 1s, fadeIn 1s;
+    -o-animation: slideInUp 1s, fadeIn 1s;
+    -ms-animation: slideInUp 1s, fadeIn 1s;
   }
 
   .is-inview .wrap-content .content .detail-item:nth-child(2){
-    animation: slideInUp 2s;
-    -webkit-animation: slideInUp 2s;
-    -moz-animation: slideInUp 2s;
-    -o-animation: slideInUp 2s;
-    -ms-animation: slideInUp 2s;
+    animation: slideInUp 2s, fadeIn 2s;
+    -webkit-animation: slideInUp 2s, fadeIn 2s;
+    -moz-animation: slideInUp 2s, fadeIn 2s;
+    -o-animation: slideInUp 2s, fadeIn 2s;
+    -ms-animation: slideInUp 2s, fadeIn 2s;
   }
 
   .is-inview .wrap-content .content .detail-item:nth-child(3){
-    animation: slideInUp 3s;
-    -webkit-animation: slideInUp 3s;
-    -moz-animation: slideInUp 3s;
-    -o-animation: slideInUp 3s;
-    -ms-animation: slideInUp 3s;
+    animation: slideInUp 3s, fadeIn 3s;
+    -webkit-animation: slideInUp 3s, fadeIn 3s;
+    -moz-animation: slideInUp 3s, fadeIn 3s;
+    -o-animation: slideInUp 3s, fadeIn 3s;
+    -ms-animation: slideInUp 3s, fadeIn 3s;
   }
