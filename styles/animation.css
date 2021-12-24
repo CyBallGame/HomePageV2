@@ -57,41 +57,41 @@
 }
 
  .is-inview #hero-image-block {
-    animation: fadeIn 3s;
-    -webkit-animation: fadeIn 3s;
-    -moz-animation: fadeIn 3s;
-    -o-animation: fadeIn 3s;
-    -ms-animation: fadeIn 3s;
+    animation: fadeIn 1.5s;
+    -webkit-animation: fadeIn 1.5s;
+    -moz-animation: fadeIn 1.5s;
+    -o-animation: fadeIn 1.5s;
+    -ms-animation: fadeIn 1.5s;
   }
 
   .is-inview .cybloc-image {
-    animation: fadeInLeft 3s;
-    -webkit-animation: fadeInLeft 3s;
-    -moz-animation: fadeInLeft 3s;
-    -o-animation: fadeInLeft 3s;
-    -ms-animation: fadeInLeft 3s;
+    animation: fadeInLeft 1.5s;
+    -webkit-animation: fadeInLeft 1.5s;
+    -moz-animation: fadeInLeft 1.5s;
+    -o-animation: fadeInLeft 1.5s;
+    -ms-animation: fadeInLeft 1.5s;
   }
 
   .is-inview .detail {
-    animation: fadeInRight 3s;
-    -webkit-animation: fadeInRight 3s;
-    -moz-animation: fadeInRight 3s;
-    -o-animation: fadeInRight 3s;
-    -ms-animation: fadeInRight 3s;
+    animation: fadeInRight 1.5s;
+    -webkit-animation: fadeInRight 1.5s;
+    -moz-animation: fadeInRight 1.5s;
+    -o-animation: fadeInRight 1.5s;
+    -ms-animation: fadeInRight 1.5s;
   }
 
   .is-inview .wrap-content .content-text {
-    animation: fadeInLeft 3s;
-    -webkit-animation: fadeInLeft 3s;
-    -moz-animation: fadeInLeft 3s;
-    -o-animation: fadeInLeft 3s;
-    -ms-animation: fadeInLeft 3s;
+    animation: fadeIn 2s;
+    -webkit-animation: fadeIn 2s;
+    -moz-animation: fadeIn 2s;
+    -o-animation: fadeIn 2s;
+    -ms-animation: fadeIn 2s;
   }
 
   .is-inview .wrap-content .content {
-    animation: fadeInRight 3s;
-    -webkit-animation: fadeInRight 3s;
-    -moz-animation: fadeInRight 3s;
-    -o-animation: fadeInRight 3s;
-    -ms-animation: fadeInRight 3s;
+    animation: fadeIn 2s;
+    -webkit-animation: fadeIn 2s;
+    -moz-animation: fadeIn 2s;
+    -o-animation: fadeIn 2s;
+    -ms-animation: fadeIn 2s;
   }

@@ -24,8 +24,11 @@ $(document).ready(function () {
     } // End if
   });
 });
-
+  var firstPlay1 = 0;
+  var firstPlay2 = 0;
+  var firstPlay3 = 0;
 $(window).scroll(function () {
+  
   var top_of_element1 = $("#banner").offset().top;
   var bottom_of_element1 =
     $("#banner").offset().top + $("#banner").outerHeight();
@@ -40,40 +43,29 @@ $(window).scroll(function () {
 
   if (
     bottom_of_screen > top_of_element1 &&
-    top_of_screen < bottom_of_element1
+    top_of_screen < bottom_of_element1 && firstPlay1 < 1
   ) {
-    // The element is visible, trigger play click event
-    // $("#light1").css({ display: "block" });
     $("#light1").trigger("play");
+    firstPlay1++;
+    console.log(firstPlay1, 'firstPlay1')
   } else {
-    // The element is not visible, trigger pause click event
-    // $("#light1").css({ display: "none" });
-    $("#light1").trigger("pause");
   }
 
   if (
     bottom_of_screen > top_of_element2 &&
-    top_of_screen < bottom_of_element2
+    top_of_screen < bottom_of_element2 && firstPlay2 < 1
   ) {
-    // The element is visible, trigger play click event
-    // $("#light2").css({ display: "block" });
     $("#light2").trigger("play");
+    firstPlay2++;
   } else {
-    // The element is not visible, trigger pause click event
-    // $("#light2").css({ display: "none" });
-    $("#light2").trigger("pause");
   }
 
   if (
     bottom_of_screen > top_of_element3 &&
-    top_of_screen < bottom_of_element3
+    top_of_screen < bottom_of_element3 && firstPlay3 < 1
   ) {
-    // The element is visible, trigger play click event
-    // $("#light3").css({ display: "block" });
     $("#light3").trigger("play");
+    firstPlay3++
   } else {
-    // The element is not visible, trigger pause click event
-    // $("#light3").css({ display: "none" });
-    $("#light3").trigger("pause");
   }
 });

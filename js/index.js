@@ -2,7 +2,6 @@ $(document).ready(function () {
     var isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
 
     if (isSafari) {
-        console.log('hihihi')
         $("#image-cybloc").css({ display: "block" });
         $("#video-cybloc").css({ display: "none" });
 
