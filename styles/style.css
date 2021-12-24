@@ -180,7 +180,7 @@ div#menu-none-mobile {
 div#hero-image-block {
     width: 95%;
     position: relative;
-    top: -160px;
+    top: -80px;
     display: flex;
     justify-content: center;
     z-index: 4;
@@ -791,7 +791,7 @@ video#five-cyblocs {
     
     img#hero-image {
         width: 150%;
-        margin-left: 40px;
+        /* margin-left: 40px; */
         height: 100%;
     }
 
@@ -922,6 +922,12 @@ video#five-cyblocs {
         height: auto;
         top: 50%;
     }
+
+    #Ecosystem .content .detail-item .wrapp-img {
+        width: 40%;
+        display: flex;
+        justify-content: center;
+    }
 }
 
 @media screen and (max-width: 767px) {
@@ -997,8 +1003,8 @@ video#five-cyblocs {
     }
 
     #Ecosystem .content .detail-item img {
-    min-width: 150px;
-    height: 200px;
+    min-width: 120px;
+    height: 150px;
 }
 
     #Ecosystem .content .detail-item {
@@ -1184,7 +1190,7 @@ video#five-cyblocs {
     right: 0;
     }
     #Ecosystem .content .detail-item#image-center {
-        justify-content: center;
+        /* justify-content: center; */
     }
     
     #Ecosystem .content-text .detail-item {
@@ -1192,12 +1198,12 @@ video#five-cyblocs {
         margin-top: 35px;
     }
     #Ecosystem .content .detail-item img {
-        min-width: 120px;
-        height: 160px;
+        min-width: 80px;
+        height: 120px;
     }
     
     #Ecosystem .content .detail-item#image-center img {
-        width: 200px;
+        min-width: 160px;
         height: auto;
     }
     #light3-img {
