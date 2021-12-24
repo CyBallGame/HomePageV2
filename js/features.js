@@ -88,11 +88,13 @@ $(document).ready(function () {
     if (currentId > 6) {
       currentId = 1;
     }
+    
     $(".tabs-controls__link--active").removeClass(
       "tabs-controls__link--active"
     );
 
     $(".tabs-controls__link").each(function (index) {
+      console.log(index)
       if (index === currentId - 1) {
         $(".tabs-controls__link").eq(index).addClass(
           "tabs-controls__link--active"

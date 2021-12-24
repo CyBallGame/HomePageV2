@@ -354,16 +354,6 @@ div#slider-feature {
     margin: 20px 0;
 }
 
-div#group-dot-slide-feature, #group-dot-slide-feature-moblie {
-    display: flex;
-    justify-content: center;
-    margin-top: 50px;
-}
-
-#group-dot-slide-feature-moblie {
-    display: none;
-}
-
 #group-dot-slide-feature {
     display: block;
 }
@@ -880,10 +870,6 @@ video#five-cyblocs {
         width: 100%;
         min-height: 200px;
     }
-
-    div#group-dot-slide-feature, #group-dot-slide-feature-moblie {
-        margin-top: 0;
-    }
     div#global-top {
         opacity: 0.1;
     }
@@ -1005,7 +991,7 @@ video#five-cyblocs {
     #Ecosystem .content .detail-item img {
     min-width: 120px;
     height: 150px;
-}
+    }
 
     #Ecosystem .content .detail-item {
         width: 100%;
@@ -1124,13 +1110,11 @@ video#five-cyblocs {
         min-width: unset;
         width: 200%;
     }
-    #group-dot-slide-feature-moblie {
-        display: block;
-        margin-top: 30px;
-    }
     
     div#group-dot-slide-feature {
-        display: none;
+        display: block;
+        position: absolute;
+        bottom: 200px;
     }
     #section1 {
         margin-bottom: 80px;
@@ -1143,6 +1127,7 @@ video#five-cyblocs {
     div#Features {
         padding-top: 0;
         margin-bottom: 80px;
+        position: relative;
     }
     
     div#Features .header-section {
@@ -1162,6 +1147,9 @@ video#five-cyblocs {
     div#Social {
         padding-top: 0;
         margin-bottom: 80px;
+    }
+    #Features .text-feature-container {
+        margin-top: 60px;
     }
 }
 

@@ -6,7 +6,7 @@ $(window).scroll(function() {
 
         var topOfWindow = $(window).scrollTop();
 
-        if (imagePos < topOfWindow+400) {
+        if (imagePos < topOfWindow+1000) {
             $(this).addClass("is-inview");
         } else {
             $(this).removeClass("is-inview");
