@@ -17,7 +17,7 @@
   text-decoration: none;
 }
 .tabs-controls__link--active {
-  opacity: 0.6;
+  background-color: #FF00C9;
 }
 .cards-container {
   position: relative;

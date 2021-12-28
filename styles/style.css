@@ -160,9 +160,9 @@ div#header {
     margin-left: 35px;
 }
 
-.menu-item#genesis {
+.menu-item.genesis {
     background: linear-gradient(96.69deg, rgba(216, 37, 254, 0.8) 13.9%, rgba(26, 11, 37, 0) 97.99%), linear-gradient(90.66deg, #FF3AE0 2.12%, #2FB0F8 95.92%);
-    padding: 8px 15px;
+    padding: 5px 40px;
 }
 
 a.menu-item:hover {
@@ -339,12 +339,12 @@ div#slider-feature {
 }
 
 .dot-item {
-    width: 20px;
-    height: 20px;
+    width: 15px;
+    height: 15px;
     background-color: #fff;
     border-radius: 50%;
     cursor: pointer;
-    opacity: 0.2;
+    opacity: 0.8;
     margin: 0 8px;
 }
 
@@ -356,6 +356,9 @@ div#slider-feature {
 
 #group-dot-slide-feature {
     display: block;
+    position: absolute;
+    bottom: -15px;
+    right: 150px;
 }
 
 .dot-item:hover {
@@ -604,6 +607,33 @@ div#Community img {
     margin-top: 20px;
     font-weight: bold;
     font-size: 32px;
+    position: relative;
+    z-index: 2;
+    padding-left: 30px;
+    display: inline-block;
+}
+
+#CyBloc .detail h4:after {
+    content: '';
+    width: 100px;
+    height: 20px;
+    position: absolute;
+    top: 30%;
+    background: linear-gradient(270deg, #45D7F7 -123.68%, rgba(101, 221, 247, 0.33735) 50.4%, rgba(118, 224, 248, 0) 79.39%);
+    right: -50px;
+    z-index: 1;
+}
+#CyBloc .detail h4:before {
+    content: '';
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: 20%;
+    background-image: url("../vendors/images/text-point.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    left: 0;
+    z-index: 1;
 }
 
 #CyBloc .detail p {
@@ -732,8 +762,16 @@ video#five-cyblocs {
 }
 
 @media screen and (max-width: 1000px) {
+    .menu-item {
+        margin-left: 0;
+    }
+
+    .menu-item.genesis {
+        padding: 5px 55px;
+    }
     #landing-page {
         position: relative;
+        width: 90vw;
     }
     video#light1, #light1-img {
         top: 15%;
@@ -914,9 +952,23 @@ video#five-cyblocs {
         display: flex;
         justify-content: center;
     }
+    #group-dot-slide-feature {
+        right: unset;
+        bottom: -30px;
+    }
 }
 
 @media screen and (max-width: 767px) {
+    #CyBloc .detail h4:before {
+    top: 10%;
+    width: 20px;
+    height: 20px;
+}
+
+#CyBloc .detail h4:after {
+    height: 18px;
+    top: 20%;
+}
     a#logo img {
         width: 140px;
         height: 70px;
@@ -1114,7 +1166,7 @@ video#five-cyblocs {
     div#group-dot-slide-feature {
         display: block;
         position: absolute;
-        bottom: 200px;
+        /* bottom: 200px; */
     }
     #section1 {
         margin-bottom: 80px;

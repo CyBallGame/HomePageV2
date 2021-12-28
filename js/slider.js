@@ -40,10 +40,10 @@ function showDivsCyblocs(n) {
     }
     for (j = 0; j < m.length; j++) {
       m[j].style.display = "none";
-      dotCyblocs[j].style.opacity = "0.2";
+      dotCyblocs[j].style.background = "#FFFFFF";
     }
     m[slideCyblocsIndex - 1].style.display = "block";
-    dotCyblocs[slideCyblocsIndex - 1].style.opacity = "0.8";
+    dotCyblocs[slideCyblocsIndex - 1].style.background = "#FF00C9";
   }
 
   function selectCybloc(index) {
@@ -53,8 +53,8 @@ function showDivsCyblocs(n) {
     slideCyblocsIndex = index;
     for (j = 0; j < m.length; j++) {
       m[j].style.display = "none";
-      dotCyblocs[j].style.opacity = "0.2";
+      dotCyblocs[j].style.background = "#FFFFFF";
     }
     m[slideCyblocsIndex - 1].style.display = "block";
-    dotCyblocs[slideCyblocsIndex - 1].style.opacity = "0.8";
+    dotCyblocs[slideCyblocsIndex - 1].style.background = "#FF00C9";
   }
