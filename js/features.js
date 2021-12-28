@@ -4,8 +4,8 @@ $(document).ready(function () {
   var maxHeight = 400;
   var maxWidthMobile = 350;
   var maxHeightMobile = 350;
-  var maxWidthMobileSmall = 300;
-  var maxHeightMobileSmall = 300;
+  var maxWidthMobileSmall = 250;
+  var maxHeightMobileSmall = 250;
 
   $(".tabs-controls__link").click(function (e) {
     e.preventDefault();

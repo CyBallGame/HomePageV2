@@ -87,12 +87,26 @@ a.control_next:hover, a.control_prev:hover {
         /* top: 70%; */
         opacity: 0.4;
         left: 5px;
+        top: unset;
+        bottom: 150px;
     }
     
     #slider-feature .control_next {
         /* top: 70%; */
         opacity: 0.4;
         right: 5px;
+        bottom: 150px;
+        top: unset;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    #slider-feature .control_next {
+        bottom: 100px;
+    }
+    
+    #slider-feature .control_prev {
+        bottom: 100px;
     }
 }
 
