@@ -771,7 +771,7 @@ video#five-cyblocs {
     }
     #landing-page {
         position: relative;
-        width: 90vw;
+        width: 100vw;
     }
     video#light1, #light1-img {
         top: 15%;
@@ -810,7 +810,7 @@ video#five-cyblocs {
     }
 
     div#banner {
-        width: 100%;
+        width: 95%;
     }
     div#hero-image-block {
         position: unset;
