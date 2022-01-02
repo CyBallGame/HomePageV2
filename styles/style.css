@@ -405,7 +405,7 @@ div#slider-feature {
 
 #Ecosystem .content .detail-item#image-center img {
     position: relative;
-    height: 200px;
+    /* height: 200px; */
 }
 
 div#Community {
@@ -979,8 +979,8 @@ video#five-cyblocs {
         height: 45px;
     }
     #Ecosystem .content .detail-item#image-center img {
-        width: 250px;
-        height: auto;
+        /* width: 250px; */
+        /* height: auto; */
     }
     h3.header-section {
         font-size: 27px;
@@ -1243,8 +1243,8 @@ video#five-cyblocs {
     }
     
     #Ecosystem .content .detail-item#image-center img {
-        min-width: 160px;
-        height: auto;
+        /* min-width: 160px; */
+        /* height: auto; */
     }
     #light3-img {
         width: 170%;
