@@ -386,6 +386,7 @@ div#slider-feature {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 30%;
 }
 
 #Ecosystem .content-text .detail-item {
@@ -545,6 +546,7 @@ div.input-form #sg-submit-btn {
     border: none;
     color: white;
     clip-path: polygon(0 0, 100% 0, 100% 100%, 3% 100%, 0 90%);
+    cursor: pointer;
 }
 
 div#form-email-wrapper {
@@ -557,8 +559,8 @@ div#form-email-wrapper {
     margin-right: 20px;
 }
 
-div.input-form #email {
-    width: calc(100% - 140px - 185px);
+div.input-form #email-wrap {
+    width: calc(100% - 140px - 210px);
     background: linear-gradient(98.8deg, rgba(4, 1, 18, 0.8) 7.77%, rgba(21, 14, 52, 0) 88.45%);
     opacity: 0.95;
     box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.25);
@@ -566,7 +568,7 @@ div.input-form #email {
     height: 80px;
 }
 
-div.input-form #email input {
+div.input-form #email-wrap input {
     border: none;
     outline: none;
     color: white;
@@ -582,7 +584,7 @@ div.input-form #email input {
     padding: 20px 40px;
 }
 
-div.input-form #email input::placeholder {
+div.input-form #email-wrap input::placeholder {
     color: white;
     font-size: 20px;
     font-weight: 500;
@@ -688,7 +690,7 @@ img.social-media-button {
 }
 
 #Community .header-section {
-    color: #FCE51D;
+    /* color: #FCE51D; */
 }
 
 div#form-image img {
@@ -731,6 +733,16 @@ video#five-cyblocs {
 }
 
 .detail-text {text-align: center;}
+
+.sg-response {
+    display: none;
+    margin-top: 20px;
+    text-align: center;
+}
+
+#Ecosystem .content .detail-item#image-center {
+    width: 40%;
+}
 
 @media screen and (max-width: 1500px) {
     div#banner:before {
@@ -838,7 +850,7 @@ video#five-cyblocs {
         background-image: url(../vendors/images/card-mobile.png);
     }
 
-    div.input-form #email {
+    div.input-form #email-wrap {
         width: 80%;
         margin-bottom: 25px;
         height: 60px;
@@ -888,9 +900,11 @@ video#five-cyblocs {
         bottom: -50px;
     }
 
-    div.input-form #email input {
+    div.input-form #email-wrap input {
         padding-top: 10px;
         padding-bottom: 10px;
+        padding-right: 0;
+        padding-left: 10px;
     }
 
     div#slider-feature {
@@ -925,7 +939,7 @@ video#five-cyblocs {
     #Ecosystem .content .detail-item {
         flex-direction: row;
         align-items: center;
-        width: 100%;
+        width: 100% !important;
         justify-content: space-between;
     }
     
@@ -1046,7 +1060,7 @@ video#five-cyblocs {
     }
 
     #Ecosystem .content .detail-item {
-        width: 100%;
+        width: 100% !important;
         height: auto;
         display: flex;
         justify-content: space-between;
@@ -1094,16 +1108,16 @@ video#five-cyblocs {
         text-align: center;
     }
 
-    div.input-form #email input::placeholder {
+    div.input-form #email-wrap input::placeholder {
         color: white;
         font-size: 16px;
         font-weight: 500;
     }
 
-    div.input-form #email {
+    div.input-form #email-wrap {
         padding: 5px 0;
-        margin-bottom: 15px;
-        height: 50px;
+        margin-bottom: 10px;
+        height: 40px;
     }
 
     div#form-image-mobile img {
@@ -1130,11 +1144,13 @@ video#five-cyblocs {
         margin-bottom: 0;
     }
 
-    div.input-form #email input {
+    div.input-form #email-wrap input {
         padding-top: 5px;
         padding-bottom: 5px;
         padding-right: 0;
-        padding-left: 20px;
+        padding-left: 10px;
+        height: 30px;
+        font-size: 16px;
     }
     
     #CyBloc .content .cybloc-image {
@@ -1209,6 +1225,13 @@ video#five-cyblocs {
     div#form-image-mobile:after {
         right: 0px;
         bottom: 0;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .sg-response {
+        margin-bottom: 10px;
+        font-size: 12px;
     }
 }
 
