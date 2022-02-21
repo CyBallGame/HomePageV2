@@ -46,6 +46,30 @@
 
 <body>
     <main id="landing-page">
+        <div id="down-load-modal-wrapper">
+            <div id="down-load-modal">
+                <div class="modal-content-wrapper">
+                    <div class="modal-content">
+                        <!-- TODO: link download -->
+                        <div class="windows">
+                            <div class="main">
+                                <img src="./vendors/images/windows-icon.png" alt="">
+                                <div class="main-text">Windows</div>
+                            </div>
+                            <div class="back-up">Windows Back-up</div>
+                        </div>
+                        <div class="android">
+                            <div class="main">
+                                <img src="./vendors/images/android-icon.png" alt="">
+                                <div class="main-text">Android <div class="sub-text">(apk)</div></div>
+                            </div>
+                            <div class="back-up">Android Back-up</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="down-load-modal-overlay"></div>
+        </div>
         <div id="video-trailer">
             <iframe width="940" height="528" src="https://www.youtube.com/embed/1g2d0P_VS2c"
                 title="YouTube video player" frameborder="0"
@@ -70,7 +94,8 @@
                 <a href="#Ecosystem" class="menu-item">Ecosystem</a>
                 <a href="#Social" class="menu-item">Social</a>
                 <a href="https://docs.cyball.com/" target="_blank" class="menu-item">Docs</a>
-                <a href="https://genesis.cyball.com/" target="_blank" class="menu-item genesis">App</a>
+                <span id="download-btn" class="menu-item color-text">DOWNLOAD</span>
+                <a href="https://signup.cyball.com/" target="_blank" class="menu-item color-text">Sign Up</a>
             </div>
             <div id="menu-mobile">
                 <div class="navbar-header">
@@ -89,10 +114,15 @@
                         <li><a href="#Ecosystem" class="menu-item">Ecosystem</a></li>
                         <li><a href="#Social" class="menu-item">Social</a></li>
                         <li><a href="https://docs.cyball.com/" target="_blank" class="menu-item">Docs</a></li>
+                        <li><span id="download-btn-mobile" class="menu-item color-text">DOWNLOAD</span></li>
+                        <li><a href="https://signup.cyball.com/" target="_blank" class="menu-item color-text">Sign Up</a></li>
                         <li><a href="https://genesis.cyball.com/" target="_blank" class="menu-item genesis">App</a></li>
                     </ul>
                 </nav>
             </div>
+        </div>
+        <div class="app-btn">
+            <a href="https://genesis.cyball.com/" target="_blank" class="menu-item genesis">App</a>
         </div>
         <div id="main-content">
             <div id="section1">

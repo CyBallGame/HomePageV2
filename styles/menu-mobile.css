@@ -96,8 +96,9 @@
 }
 
 .overlay ul li {
-  display: block;
+  display: flex;
   margin-bottom: 20px;
+  justify-content: center;
 }
 
 .overlay ul li a {

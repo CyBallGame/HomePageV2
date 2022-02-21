@@ -23,6 +23,111 @@ body {
     justify-content: center;
 }
 
+#down-load-modal-wrapper {
+    display: none;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+
+#down-load-modal {
+    background-image: url(../vendors/images/bgr-modal.png);
+    background-color: #ddd;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: initial;
+    width: 60vw;
+    height: auto;
+    aspect-ratio: 1.5;
+    position: absolute;
+    z-index: 101;
+}
+
+#down-load-modal-overlay {
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+    opacity: 0.8;
+    position: absolute;
+}
+
+#down-load-modal .modal-content-wrapper {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ .back-up{
+ color: #FF3AC8;
+ font-weight: bold;
+ font-size: 22px;
+ margin-top: 25px;
+ cursor: pointer;
+}
+#down-load-modal .main-text{
+ color: #FFFFFF;
+ font-weight: bold;
+ font-size: 18px;
+}
+
+#down-load-modal .sub-text {
+    font-size: 14px;
+}
+
+#down-load-modal .main {
+    display: flex;
+    align-items: center;
+    background: linear-gradient(95.02deg, #F83FE1 -0.32%, #36ACF7 99.68%);
+    width: 235px;
+    height: 55px;
+    justify-content: center;
+    cursor: pointer;
+}
+
+#down-load-modal .main img{
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+#down-load-modal .modal-content {
+    display: flex;
+    background: linear-gradient(98.8deg, rgba(21, 14, 52, 0.8) 7.77%, rgba(21, 14, 52, 0) 88.45%);
+    opacity: 0.95;
+    filter: drop-shadow(0px 4px 24px rgba(0, 0, 0, 0.25));
+    backdrop-filter: blur(40px);
+/* Note: backdrop-filter has minimal browser support */
+    border-radius: 10px;
+    border: 10px solid;
+    border-image-slice: 1;
+    border-width: 1px;
+    border-image-source: linear-gradient(to left, #743ad5, #d53a9d);
+    padding: 50px;
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+}
+
+#down-load-modal .windows {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#down-load-modal .android {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 h3 {
     text-align: center;
     font-weight: bold;
@@ -149,6 +254,14 @@ div#header {
     z-index: 5;
 }
 
+.app-btn {
+    display: flex;
+    justify-content: flex-end;
+    width: 85%;
+    position: relative;
+    top: -30px;
+}
+
 .menu-item {
     color: white;
     text-decoration: none;
@@ -157,15 +270,24 @@ div#header {
     font-style: normal;
     font-weight: bold;
     font-size: 22px;
-    margin-left: 35px;
+    margin-left: 25px;
 }
 
 .menu-item.genesis {
     background: linear-gradient(96.69deg, rgba(216, 37, 254, 0.8) 13.9%, rgba(26, 11, 37, 0) 97.99%), linear-gradient(90.66deg, #FF3AE0 2.12%, #2FB0F8 95.92%);
-    padding: 5px 40px;
+    /* padding: 5px 40px; */
+    width: 285px;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-a.menu-item:hover {
+.menu-item:hover {
+    color: #ff3acb;
+}
+
+.menu-item.color-text {
     color: #ff3acb;
 }
 
@@ -754,6 +876,10 @@ video#five-cyblocs {
     div#header {
         width: 95%;
     }
+
+    .app-btn {
+        width: 95%;
+    }
 }
 
 @media screen and (max-width: 1200px) {
@@ -774,6 +900,28 @@ video#five-cyblocs {
 }
 
 @media screen and (max-width: 1000px) {
+    #down-load-modal {
+        width: 100vw;
+    }
+    #down-load-modal .modal-content {
+        padding: 30px 25px;
+    }
+
+    #down-load-modal .main {
+        width: 100%;
+        height: 40px;
+    }
+
+    .back-up{
+        font-size: 18px;
+    }
+    #down-load-modal .main-text{
+        font-size: 16px;
+    }
+    
+    #down-load-modal .sub-text {
+        font-size: 12px;
+    }
     .menu-item {
         margin-left: 0;
     }
@@ -796,6 +944,10 @@ video#five-cyblocs {
         justify-content: center;
     }
     div#menu-none-mobile {
+        display: none;
+    }
+
+    .app-btn {
         display: none;
     }
     #CyBloc .content {
@@ -1229,6 +1381,22 @@ video#five-cyblocs {
 }
 
 @media screen and (max-width: 500px) {
+    #down-load-modal .modal-content {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #down-load-modal .windows {
+        margin-bottom: 15px;
+    }
+    
+    .back-up {
+        margin-top: 5px;
+    }
+    
+    #down-load-modal .main {
+        width: 70%;
+    }
     .sg-response {
         margin-bottom: 10px;
         font-size: 12px;
