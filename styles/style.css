@@ -260,6 +260,7 @@ div#header {
     width: 85%;
     position: relative;
     top: -30px;
+    z-index: 6;
 }
 
 .menu-item {
