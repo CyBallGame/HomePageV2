@@ -65,12 +65,14 @@ body {
     align-items: center;
 }
 
- .back-up{
+ .back-up a{
  color: #FF3AC8;
  font-weight: bold;
  font-size: 22px;
  margin-top: 25px;
  cursor: pointer;
+ text-decoration: none;
+ display: inline-block;
 }
 #down-load-modal .main-text{
  color: #FFFFFF;
@@ -90,6 +92,7 @@ body {
     height: 55px;
     justify-content: center;
     cursor: pointer;
+    text-decoration: none;
 }
 
 #down-load-modal .main img{
